@@ -1,0 +1,130 @@
+/* Smartphones (portrait) ----------- */
+@media screen and (max-device-width: 480px){
+	#headBar{
+		background: url(../img/dust.png) ;	
+		padding: 0;
+		-webkit-box-shadow: 3px 6px 11px rgba(49, 50, 50, 0.85);
+		-moz-box-shadow:    3px 6px 11px rgba(49, 50, 50, 0.85);
+		box-shadow:         3px 6px 11px rgba(49, 50, 50, 0.85);
+		height: 12em;
+	}
+	#header{
+		padding: 0;
+		margin: 0;
+		background: url(../img/PanrtersLogoMobile.png) no-repeat 5em .3em;
+		height: 10em;
+		width: 30em;
+	}	
+	
+	#header a{
+		text-indent: -9999px;
+		display: block;
+		height: 10em;
+	}
+	
+	#wrapper{
+		width: 85%;
+		margin:  .5em auto;
+		background-color: white;
+		height: 100%;
+		display: none;
+	}
+	
+	#content h2{
+		font-size: 3em;
+	}
+	
+	#content img{
+		height: 270px;
+		wight: 270px;
+	}
+	
+	#listFlowers li{
+			padding: 3em;
+	}
+	
+	#info input {
+	width: 5em;
+	font-size: 3em;
+	margin-top: 1.5em;
+	}
+	
+#info label{
+	font-size: 3.2em;	
+	padding-right: .5em;
+}
+	
+	#toFirst, #toLast{
+		position: relative;
+		left: 1.3em;
+	}
+	
+	#email{
+		padding-right: 6.5em;
+	}
+	
+	#date{
+		position: relative;
+		left: .6em;
+		padding-right: 6.5em;
+	}
+	
+	form input[type=submit]{
+		margin-left: 6em;
+	}
+	
+	p{
+		font-size: 2em;	
+		text-align: center;
+	}
+	#small{
+		width: 15em;
+		text-align: center;	
+		padding-left: 3.4em;
+	}
+	
+	#large{
+		width: 15em;
+		text-align: center;
+		padding-left: 27em;
+		position: relative;
+		bottom: 3em;
+	}
+	
+ .caption p:first-child{
+		padding-left: 2.5em;
+	}
+	.caption p:last-child{
+		padding-left: 4.5em;
+	}
+	
+	#small p:first-child{
+		padding: 0;
+	}
+	#large p:last-child{
+		padding: 0;
+	}
+	
+	.ok, #errorOk{
+		width: 85%;
+		font-size: 3.5em;
+		margin:  .3em 15em ;	
+		position: relative;
+		right: 13.7em;
+	}
+	
+	#request, #error, #noJs{
+		height: 31em;
+		width: 90%;
+		margin: 1em  auto;
+		background: url(../img/dust.png) ;
+		border: 1px dashed; #333;	
+		text-align: center;
+	}
+	
+	#request p, #error p, #noJs p{
+		font:  3em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		width: 60%;
+		text-align: center;
+	}
+}

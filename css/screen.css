@@ -1,0 +1,184 @@
+/*------------------Author------------------
+
+Author: Jessica Sears
+Date: 8/21/12
+Company: Catlyn Designs
+email: panterpaws@gmail.com
+pass: pksflowers
+
+------------------General Styles------------------*/
+body{
+	padding: 0 0 5em 0;
+	margin: 0;
+	background:  url(../img/pattern8-pattern-58b.png);
+}
+
+#headBar{
+	background: url(../img/dust.png) ;	
+	padding: 0;
+	-webkit-box-shadow: 3px 6px 11px rgba(49, 50, 50, 0.85);
+	-moz-box-shadow:    3px 6px 11px rgba(49, 50, 50, 0.85);
+	box-shadow:         3px 6px 11px rgba(49, 50, 50, 0.85);
+}
+
+#header{
+	background: url(../img/PanrtersLogo.png) no-repeat;
+	height: 3em;
+	width: 10em;
+	margin: 0;
+	position: relative;
+	top: .2em;
+	left: .2em;
+}
+
+#header a{
+	text-indent: -9999px;
+	display: block;
+	height: 3em;
+	width: 10em;
+}
+
+
+#wrapper{
+	width: 60em;
+	margin:  .5em auto;
+	background-color: white;
+	height: 100%;
+	display: none;
+}
+
+#content h2{
+	text-align: center;
+	padding-top: 1em;
+}
+
+#content img{
+	height: 150px;
+	wight: 150px;
+}
+
+
+/*------------------------Form styles---------------------------*/
+
+
+form{
+	width: 50em;
+	margin:  5em auto;
+}
+
+#content li{
+	list-style-type: none;
+	display: inline;
+}
+
+#listFlowers li{
+		padding: 6em;
+}
+
+#info{
+	padding-top: 3em;	
+	margin:  0 auto;
+}
+
+#info input {
+-moz-border-radius: 5px;  
+-webkit-border-radius: 5px; 
+font-size: 1.5em;
+margin-top: 1.5em;
+}
+
+#info label{
+	font-size: 2em;	
+	padding-right: 2.4em;
+}
+
+input:focus {
+	background-color: #bccad1;
+}
+
+#toFirst, #toLast{
+	position: relative;
+	left: 1.6em;
+}
+
+#fromFirst, #fromLast{
+	position: relative;
+	left: .2em;
+}
+
+#email{
+	width: 21.7em;
+}
+
+#date{
+	position: relative;
+	left: .7em;
+	width: 22em;
+}
+
+
+form input[type=submit], .ok, #errorOk {
+	background-image: -ms-linear-gradient(top, #BCCAD1 0%, #525E66 100%);
+	background-image: -moz-linear-gradient(top, #BCCAD1 0%, #525E66 100%);
+	background-image: -o-linear-gradient(top, #BCCAD1 0%, #525E66 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #BCCAD1), color-stop(1, #525E66));
+	background-image: -webkit-linear-gradient(top, #BCCAD1 0%, #525E66 100%);
+	background-image: linear-gradient(to bottom, #BCCAD1 0%, #525E66 100%);
+	margin-left: 2.5em;
+
+}
+
+form input[type=submit]{
+	width: 15em;	
+	margin-left: 7em;
+}
+
+.ok, #errorOk{
+	width: 6em;
+	font-size: 1.5em;
+	margin:  .3em 15em ;	
+}
+
+#request, #error, #noJs{
+	height: 10em;
+	width: 90%;
+	margin: 1em  auto;
+	background: url(../img/dust.png) ;
+	border: 1px dashed; #333;	
+	text-align: center;
+}
+
+#request p, #error p, #noJs p{
+	font:  1.5em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.figure{
+	display: inline;
+}
+
+.caption p:first-child{
+	padding-left: 7.5em;
+}
+.caption p:last-child{
+	padding-left: 16.3em;
+}
+
+#small  p:first-child{
+	padding-left: 5em;
+	display: inline;
+}
+#large p:last-child{
+	padding-left: 27em;
+	display: inline;
+	position: relative;
+	bottom: 1em;
+}
+
+p{
+	display: inline;
+	font-size: 1em;
+	text-align: center;
+}
