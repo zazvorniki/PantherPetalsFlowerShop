@@ -1,5 +1,5 @@
 <?
-  $emailTo = ' panterpaws@gmail.com';
+  $emailTo = ' pkspantherpaws@gmail.com';
   $subject = 'Request for  flowers';
   $flowers = $_POST['flowers'];
   $toFirst= $_POST['toFirst'];

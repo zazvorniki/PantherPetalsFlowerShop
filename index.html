@@ -11,18 +11,24 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" charset="utf-8" />
 		<link rel="stylesheet" href="css/phone.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="css/fire.css" type="text/css" media="screen" charset="utf-8" />
 		<link rel="stylesheet" href="css/jquery.ketchup.css" type="text/css" />
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		 <script type="text/javascript" src="js/jquery.ketchup.all.min.js"></script>
+		 <script type="text/javascript" src="js/jquery.placeholder.js"></script>
 		<script src="js/jquery.ui.core.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
 		<link rel="stylesheet" href="css/ui-darkness/jquery-ui-1.8.23.custom.css" type="text/css" />
 		<link rel="icon" href="favicon.png" type="image/png"/> 
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href="css/ie.css" />
+		<![endif]-->
 </head>
 	<body>	
 		<div id="headBar">
 			<h1 id="header"><a href="index.html">Panters Petals</a></h1>
 		</div>
+		<p id="bottomGray"></p>
 			<noscript>
 				<div id="noJs">
 					<p>Were sorry, but it looks like you have javascript turned off. Please turn it on and then re-load your page.</p>
@@ -44,18 +50,18 @@
 						
 						<li><img src="img/flower.jpeg" alt="" /><input type="radio"  class="flowers" name="flowers" value="Small Bouquet" align="right" required="true" data-validate="validate(required)" /></li>
 						<li><img src="img/flower.jpeg" alt="" /><input type="radio"  class="flowers"  name="flowers" value="Large Bouquet" /></li>
-						<div class="caption"><p>Small Bouquet</p><p>Large Bouquet</p></div>
+						<div class="caption"><p>Small Bouquet</p><p id="largeFlower">Large Bouquet</p></div>
 						<li><img src="img/flower.jpeg" alt="" /><input type="radio"  class="flowers"  name="flowers" value="Small Tissue Paper Bouquet" /></li>
 						<li><img src="img/flower.jpeg" alt="" /><input type="radio" class="flowers"  name="flowers" value="Large Tissue Paper Bouquet" /></li>
-						<div class="tissueCaption"><div id="small"><p>Small Tissue Paper Bouquet</p></div><div id="large"><p>Large Tissue Paper Bouquet</p></div></div>
+						<div class="tissueCaption"><div id="small"><p>Small Tissue Paper Bouquet</p></div><div id="large"><p id="largeBouquet">Large Tissue Paper Bouquet</p></div></div>
 					</ul>
 					<div id="info">
 						<ul>
-							<li><label>To:</label><input id="toFirst"  placeholder="ex: Johney"  type="text" required="true" data-validate="validate(required, minlength(3))" /><input type="text" placeholder="Appleseed" id="toLast" equired="true"  data-validate="validate(required, minlength(3))"/></li>
-							<li><label>From:</label><input id="fromFirst"  placeholder="ex: Johney" value="" type="text" required="true" data-validate="validate(required, minlength(3)" /><input type="text" id="fromLast" equired="true" placeholder="Appleseed" data-validate="validate(required, minlength(3))"/></li>
-							<li><label>Email:</label><input  name="email" id="email" placeholder="ex: sample@yahoo.com" value="" type="email" required="true" data-validate="validate(required, email)" /></li>
-							<li><label>Date:</label><input id="date" name="date" id="date" type="text"  required="true" data-validate="validate(required, minlength(3)"/></li>
-							<li><input  name="submit" type="submit"  /></li>
+							<li><label>To:</label><input id="toFirst"  placeholder="ex: First Name"  type="text" required="true" data-validate="validate(required, minlength(3))" autocomplete="false"/><input type="text" placeholder="Last Name" id="toLast" equired="true"  data-validate="validate(required, minlength(3))" autocomplete="false"/></li>
+							<li><label>From:</label><input id="fromFirst"  placeholder="ex: First Name" value="" type="text" required="true" data-validate="validate(required, minlength(3)" autocomplete="false"/><input type="text" id="fromLast" equired="true" placeholder="Last Name" data-validate="validate(required, minlength(3))" autocomplete="false"/></li>
+							<li><label>Email:</label><input  name="email" id="email" placeholder="ex: pkspantherpaws@gmail.com" value="" type="email" required="true" data-validate="validate(required, email)" autocomplete="false"/></li>
+							<li><label>Date:</label><input id="date" name="date" id="date" type="text"  required="true" data-validate="validate(required, minlength(3)" autocomplete="false"/></li>
+							<li><input  name="submit" type="submit" value="Place your order!"  /></li>
 						</ul>
 					</div>
 				</form>

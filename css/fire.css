@@ -1,0 +1,14 @@
+@-moz-document url-prefix() {
+    #info label {
+        padding-right: 0.2em;
+    }
+    #email {
+        width: 27.5em;
+    }
+    #date {
+        width: 27.4em;
+    }
+    #wrapper{
+    	padding-bottom: 2em;
+    }
+ }

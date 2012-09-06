@@ -3,7 +3,7 @@
 Author: Jessica Sears
 Date: 8/21/12
 Company: Catlyn Designs
-email: panterpaws@gmail.com
+email: pkspantherpaws@gmail.com
 pass: pksflowers
 
 ------------------General Styles------------------*/
@@ -20,6 +20,7 @@ body{
 	-moz-box-shadow:    3px 6px 11px rgba(49, 50, 50, 0.85);
 	box-shadow:         3px 6px 11px rgba(49, 50, 50, 0.85);
 }
+
 
 #header{
 	background: url(../img/PanrtersLogo.png) no-repeat;
@@ -130,7 +131,7 @@ form input[type=submit], .ok, #errorOk {
 
 form input[type=submit]{
 	width: 15em;	
-	margin-left: 7em;
+	margin-left: 9em;
 }
 
 .ok, #errorOk{
@@ -182,3 +183,6 @@ p{
 	font-size: 1em;
 	text-align: center;
 }
+
+input, textarea { color: #000; }
+.placeholder { color: #aaabab; }

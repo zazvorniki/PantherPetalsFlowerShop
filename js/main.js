@@ -3,7 +3,7 @@ $(document).ready(function(){
 $('#sendFlowers').ketchup();
 $("#wrapper").show();
 $('#date').datepicker({beforeShowDay:  $.datepicker.noWeekends, onSelect: function(dateText, inst) {$(".ketchup-error").hide();}});
-
+$('input, textarea').placeholder();
 
 $("#request").hide();
 $("#error").hide();
@@ -15,8 +15,6 @@ $("#error").hide();
 $('#date').on("focusout", function(){
 	$(".ketchup-error").hide();
 })
-
- 
 
 $(".ok").on("click", function(){
 	$('#request').fadeOut('slow', function() {
@@ -40,8 +38,11 @@ $("#errorOk").on("click", function(){
 	
 	
 	if($('#toFirst').val() == "" || $('#fromFirst').val() == "" || $('#toLast').val() == "" || $('#fromLast').val() == "" || $('#email').val() == "" || $('#date').val() == "" ||  $("#flowers").checked== false){
-		
-	}else{
+		        $('html, body').animate({scrollTop:0}, 'slow');
+		       	 if($('.flowers').is(':checked')) { 
+		       	 		$(".ketchup-error").hide();
+		       	  }
+		       	}else{
 		$.ajax({
 			url: 'php/emailForm.php',
 		  type: 'POST',

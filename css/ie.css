@@ -1,0 +1,21 @@
+#largeFlower{
+	padding-left: 16.5em;
+	display: inline;
+}
+#largeBouquet{
+	padding-left: 27em;
+	display: inline;
+	position: relative;
+	bottom: 1em;
+}
+
+#wrapper{
+	padding-bottom: 2em;
+}
+
+#bottomGray{
+	background: url('../img/bottomGradent.png') ;
+	height: 20px;
+	margin: 0;
+	display: block;
+}
